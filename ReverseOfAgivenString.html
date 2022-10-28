@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+   <head>
+      <script>
+function revS()
+{
+    var length = document.getElementById("str").value.length;
+    var r = new String;
+    for(let i=length-1;i>=0;i--) 
+	{
+     r += document.getElementById("str").value.substring(i,i+1);
+    }
+    alert(r);
+}
+		 
+      </script>
+   </head>
+   <body>
+      <p>enter the  string:<input type="text" id="str">
+<input type="button" value="Display" onclick="revS()">
+      
+   </body>
+</html>

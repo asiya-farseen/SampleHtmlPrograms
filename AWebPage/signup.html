@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.active {
+  background-color: #04AA6D;
+}
+ a:hover {
+  background-color: #111;
+}
+body{
+background-image: url('background1.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: 100% 100%;
+color:white;
+}
+h2{
+color:white;
+background-color:black;
+border-style:dotted;
+border-color:black;
+padding:20px;
+
+}
+</style>
+<body>
+<h2><center>FLAT WORLD &nbsp &nbsp<img src="C:\Users\farseen.a\Desktop\files\logo.png" alt="logo" width="30"> 
+
+
+</h2>
+
+<center>
+
+<ul>
+<li><a href="index.html">HOME</a></li>
+  <li><a href="about.html">ABOUT US</a></li>
+  <li><a href="photo.html">PHOTOS</a></li>
+  <li><a href="contact.html">CONTACT US</a></li>
+  <li style="float:right"><a class="active" href="login.html">login</a></li>
+<li style="float:right"><a class="active" href="signup.html">sign up</a></li>
+
+</ul>
+
+  
+<form action="/action_page.php">
+ <span style="color:red"> * &nbsp </span><label for="fname">FIRST NAME:</label><input type="text" pattern="^[a-zA-Z][\sa-zA-Z\s]" required><br><br>
+  <label for="lname">LAST NAME</label>
+  <input type="text" required><br><br>
+<label for="email">EMAIL:</label>
+<input type="email"><br><br>
+
+
+
+    <label for="psw"><b>PASSWORD</b></label>
+    <input type="password" requried><br><br>
+
+<button type="submit vale="submit">SUBMIT</button>
+  </form> 
+  </div>
+
+</form>
+
+
+insert into products values('fridge','hier','a very good prodcut',15000);
+insert into products values('fridge','samsung','a very good prodcut samsung ',14000);
+insert into products values('tv','samsung',' good prodcut',19000);
+insert into products values('fridge','wirpool','wirlpool servers better prodcut',15000);
+<connectionStrings>
+		<add name="dbcs" connectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\farseen.a\Desktop\ASP .NET tranning\eComProjectTemplate\eComProjectTemplate\App_Data\demodb.mdf;Integrated Security=True" providerName="System.Data.SqlClient"/>
+	</connectionStrings>
+
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Users\farseen.a\Desktop\ASP .NET tranning\eComProjectTemplate\eComProjectTemplate\App_Data\demodb.mdf";Integrated Security=True

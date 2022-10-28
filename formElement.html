@@ -1,0 +1,124 @@
+
+<html> 
+    <style>
+.req{
+color:red;
+}
+
+h2{
+color:white;
+background-color:black;
+border-style:dotted;
+border-color:black;
+padding:20px;
+
+}
+body{
+background-color:lightgrey;
+}
+        .Table  
+        {  
+            display: table; 
+ margin-left: auto;
+  margin-right: auto; 
+        }  
+        .Title  
+        {  
+            display: table-caption;  
+            text-align: center;  
+            font-weight: bold;  
+            font-size: larger;  
+        }  
+        .Heading  
+        {  
+            display: table-row;  
+            font-weight: bold;  
+            text-align: center;  
+        }  
+        .Row  
+        {  
+            display: table-row;  
+	    background-color:#bbb;
+	    height:40px;
+
+        }  
+        .Cell  
+        {  
+            display: table-cell;  
+            border: solid;  
+            border-width: thin;  
+            padding:10px;
+	    background-color:gray;  
+        }  
+    </style>  
+<body> 
+<h2><center>FILL THE BELOW FORM</center>
+</h2>
+<form action="/action_page.php"> 
+<div class="Table"> 
+<div class="Row"> 
+<div class="Cell">USER NAME &nbsp<span class="req">*</span></div> 
+<div class="Cell"><input type="text" name="USER NAME" patteren="^[a-zA-z][\sa-zA-Z\s]" max-length="20" required> </div>
+</div>
+<div class="Row"> 
+<div class="Cell">GENDER</div>
+<div class="Cell"><input type="radio" name="MALE">
+  <label for="MALE">MALE</label>
+  <input type="radio" name="MALE">
+  <label for="FEMALE">FEMALE</label> </div>
+</div>
+<div class="Row">
+<div class="Cell">DATE OF BIRTH</div> 
+<div class="Cell"><input type="date" name="DATE OF BIRTH" required> </div>  
+</div>
+<div class="Row"> 
+<div class="Cell">AGE</div> 
+<div class="Cell"><input type="text" name="AGE" pattern="[0-9]"> </div>
+</div>
+<div class="Row">
+<div class="Cell">PHONE NUMBER</div> 
+<div class="Cell"><input type="text" name="PHNUMBER" pattern="[789][0-9]{9}" min-length="10" max-length="10"> </div>  
+</div>
+<div class="Row">
+<div class="Cell">ARES OF INTEREST</div> 
+<div class="Cell"> <input type="checkbox" name="MACHINE LEARNING" value="ML">
+  <label for="vehicle1"> MACHINE LEARNING</label><br>
+  <input type="checkbox" name="DOT NET" value="DOT NET">
+  <label for="vehicle2"> DOT NET</label><br>
+  <input type="checkbox" id="CSS" value="CSS"> 
+  <label for="vehicle2"> CSS</label><br> 
+</div>
+</div>
+<div class="Row">
+<div class="Cell">EMAIL <span class="req">*</span></div> 
+<div class="Cell"><input type="email" name="EMAIL"> </div>  
+</div>
+<div class="Row">
+<div class="Cell">ADDRESS</div> 
+<div class="Cell"><input type="textarea" name="ADDRESS"> </div>  
+</div>
+<div class="Row">
+<div class="Cell">NATIONALITY</div> 
+<div class="Cell"><select name="cars" id="cars">
+    <option value="INDIAN">INDIAN</option>
+    <option value="AFGAN">AFGAN</option>
+    <option value="AMERICAN">AMERICAN</option>
+    <option value="ALGERIAN">ALGERIAN</option>
+  </select> </div>  
+</div>
+<div class="Cell">
+</div>
+<div class="Cell">
+<button type="submit" value="Submit">SUBMIT</button>
+<button type="reset" value="Submit">RESET</button></div>
+</div>
+</div>
+</div>
+</form>
+</body>
+
+</html>
+
+  
+  
+  

@@ -1,0 +1,40 @@
+<html>
+<body>
+<p>
+    <select id="city">
+        <option>select the city </option>
+        <option>INDIA</option>
+        <option>AMERICA</option>
+        <option>CHINA</option>
+        <option>DUBAI</option>
+    </select>
+</p>
+<p><button onclick="cal()">known</button></p>
+<p id="cvalue"></p>
+<script>
+function cal() {
+    var c = document.getElementById('city').value;
+    switch(c) {
+        case 'INDIA':
+            alert("INDIA");
+            break;
+        case 'AMERICA':
+            alert("AMERICA");
+            break
+            
+        case 'CHINA':
+             alert("CHINA");
+            break;
+            
+        case 'DUBAI':
+            alert("DUBAI");
+            break;
+            
+        default:
+           alert("not");
+            break;
+    }
+}
+</script>
+</body>
+</html>

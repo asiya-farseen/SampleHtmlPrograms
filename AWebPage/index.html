@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<style>
+    .Row {
+        display: table-row;
+        background-color: #bbb;
+        height: 40px;
+    }
+
+    .Cell {
+        display: table-cell;
+        border: solid;
+        border-width: thin;
+        padding: 10px;
+        background-color: gray;
+    }  
+
+.footer {
+  position: fixed;
+  left: 10;
+  bottom: 0;
+  width: 100%;
+height:5%;
+  background-color:Tomato;
+  color: white;
+  text-align: center;
+font-size:15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.active {
+  background-color: #04AA6D;
+}
+ a:hover {
+  background-color: #111;
+}
+h2{
+color:white;
+background-color:black;
+border-style:dotted;
+border-color:black;
+padding:20px;
+
+}
+body{
+background-color:aquamarine;
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<body>
+    <h2>
+        <center>FLAT WORLD &nbsp &nbsp<img src="C:\Users\farseen.a\Desktop\files\logo.png" alt="logo" width="30"></center>
+    </h2>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="photo.html">PHOTOS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li style="float:right"><a class="active" href="login.html">login</a></li>
+        <li style="float:right"><a class="active" href="signup.html">sign up</a></li>
+
+    </ul>
+    
+    <script>
+
+function validateform()
+{
+var name=document.getElementById("name").value;
+var password=document.getElementById("password").value;
+ if(name=="")
+ {
+  alert("name cant be null and")
+  }
+else if(password.length<6)
+{
+ alert("passowrd must be more than six charterds .");
+ }
+else if(name=="ADMIN" || name=="admin")
+{
+alert("success");
+}
+else
+{
+alert("login unsucessfull");
+}
+}
+    </script>
+    <body><center>
+              <form>
+                  <div class="Row">
+                      <div class="Cell">USER NAME</div>
+                      <div class="Cell"><input type="text" name="name" id="name"></div>
+                  </div>
+                  <div class="Row">
+                      <div class="Cell">PASSWORD</div>
+                      <div class="Cell"><input type="password" name="password" id="password"> </div>
+                  </div>
+                  <div class="Cell">
+                      <div>
+                      <div class="Cell">
+                          <button type="submit" value="Submit" onclick="validateform()">SUBMIT</button>
+                          <button type="reset" value="Submit">RESET</button>
+                      </div>
+                  </div>
+                  </div>
+                  
+
+              </form>
+    </body>
+    <script>
+
+function validateform()
+{
+var name=document.getElementById("name").value;
+var password=document.getElementById("password").value;
+ if(name=="")
+ {
+  alert("name cant be null and")
+  }
+else if(password.length<6)
+{
+ alert("passowrd must be more than six charterds .");
+ }
+else if(name=="ADMIN" || name=="admin")
+{
+alert("success");
+}
+else
+{
+alert("login unsucessfull");
+}
+}
+   
+
+
+    <div class="footer">
+        <p>&#169;</p>
+    </div>
+</body>
+</html>
